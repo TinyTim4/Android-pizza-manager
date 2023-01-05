@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CurrentOrder">
+
+    <TextView
+            android:id="@+id/textview_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+    <TextView
+            android:text="Current Order"
+            android:layout_width="180dp"
+            android:layout_height="36dp" android:id="@+id/name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="92dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="44dp"/>
+    <ListView
+            android:layout_width="405dp"
+            android:layout_height="351dp" android:layout_marginTop="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/name" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="4dp" android:cacheColorHint="#66EBF4EC" android:background="#B6E1B3"
+            android:id="@+id/pizzaList"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="249dp"
+            android:layout_height="37dp" android:id="@+id/orderNum"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="36dp"/>
+    <Button
+            android:text="Place Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/placeOrder"
+            android:layout_marginTop="116dp"
+            app:layout_constraintTop_toBottomOf="@+id/pizzaList" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="36dp"/>
+    <Button
+            android:text="Clear Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/clearOrder"
+            android:layout_marginTop="116dp"
+            app:layout_constraintTop_toBottomOf="@+id/pizzaList" android:layout_marginStart="56dp"
+            app:layout_constraintStart_toEndOf="@+id/placeOrder"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="186dp"
+            android:layout_height="27dp" android:id="@+id/orderSub"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/pizzaList" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="151dp"
+            android:layout_height="29dp" android:id="@+id/orderTax"
+            android:layout_marginTop="31dp"
+            app:layout_constraintTop_toBottomOf="@+id/pizzaList" android:layout_marginStart="47dp"
+            app:layout_constraintStart_toEndOf="@+id/orderSub"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="182dp"
+            android:layout_height="33dp" android:id="@+id/orderTotal"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/orderSub" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="27dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

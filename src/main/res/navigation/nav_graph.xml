@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/FirstFragment">
+
+    <fragment
+            android:id="@+id/FirstFragment"
+            android:name="com.example.project5main.MainScreen"
+            android:label="RU Pizza"
+            tools:layout="@layout/main_screen">
+        <action android:id="@+id/action_FirstFragment_to_flavorMenu" app:destination="@id/flavorMenu"/>
+        <action android:id="@+id/action_FirstFragment_to_currentOrder2" app:destination="@id/currentOrder2"/>
+        <action android:id="@+id/action_FirstFragment_to_storeOrderFragment" app:destination="@id/storeOrderFragment"/>
+    </fragment>
+    <fragment android:id="@+id/flavorMenu" android:name="com.example.project5main.FlavorMenu"
+              android:label="Choose Your Flavor" tools:layout="@layout/fragment_flavor_menu"/>
+    <fragment android:id="@+id/currentOrder2" android:name="com.example.project5main.CurrentOrder"
+              android:label="Current Order" tools:layout="@layout/fragment_current_order"/>
+    <fragment android:id="@+id/storeOrderFragment" android:name="com.example.project5main.StoreOrderFragment"
+              android:label="Store Order" tools:layout="@layout/fragment_store_order"/>
+</navigation>

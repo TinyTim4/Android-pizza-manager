@@ -21,18 +21,24 @@ customized toppings, and a list of sizes to choose from.
 (4) If “Build your own” pizza is chosen, the system shall display a list of toppings for customization. The store
 maintains at least 13 different toppings every day. The store staff shall be able to customize the pizza by adding
 or removing the toppings, with a maximum of 7 additional toppings.
+
 (5) The system shall display a running subtotal with 2 decimal places on the ordering pizza page.
+
 (6) The system shall allow the store staff to add multiple pizzas to the same order and remove selected pizzas from
 the order.
+
 (7) The store staff shall be able to check the detail of the current order before placing the order. The system will keep
 track of the current order in a shopping cart. The order details in the shopping cart shall include the list of pizzas.
 Each pizza shall include the pizza style, crust, list of toppings, subtotal for each pizza, total amount of the pizzas
 in the order, sales tax amount and the order total, which is the total amount plus sales tax. The tax rate is 6.625%.
+
 (8) The store staff shall be able to remove a pizza or remove all pizzas in the shopping cart. While the staff is
 removing pizzas from the shopping cart, the system shall update the total amount, sales tax, and the order total
 accordingly.
+
 (9) The system shall be able to keep track of all the store orders, allow the store staff to browse the store orders and
 cancel an order. These shall include displaying all the store orders by the order numbers, the order total for each
 order with 2 decimal places, and the list of pizzas in each order.
+
 (10) The system shall be able to export the store orders and save them in a text file, which includes a list of store
 orders. Each store order shall include the order number, the list of pizzas ordered, and the order total.
